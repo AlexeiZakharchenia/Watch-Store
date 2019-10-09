@@ -27,9 +27,9 @@
 Проект использует язык Java, а также Servlet API, для хранения данных используется база данных MySQL, для реализации пользовательского интерфейса JSP API.
 #### 2.2. Интерфейс пользователя <a name="2.2"></a>
 - Окно просмотра всех продуктов
-   ![Окно просмотра всех продуктов](https://raw.githubusercontent.com/AlexeiZakharchenia/Watch-Store/master/documentation/Mockups/productListPage.png)
+  ![Окно просмотра всех продуктов](https://raw.githubusercontent.com/AlexeiZakharchenia/Watch-Store/master/documentation/Mockups/productListPage.png)
 - Окно просмотра детальной информации о продукте
-   ![Окно просмотра детальной информации о продукте](https://raw.githubusercontent.com/AlexeiZakharchenia/Watch-Store/master/documentation/Mockups/productDetailsPage.png)
+  ![Окно просмотра детальной информации о продукте](https://raw.githubusercontent.com/AlexeiZakharchenia/Watch-Store/master/documentation/Mockups/productDetailsPage.png)
 - Окно просмотра корзины
   ![Окно просмотра корзины](https://raw.githubusercontent.com/AlexeiZakharchenia/Watch-Store/master/documentation/Mockups/cartPage.png)
 - Окно оформления заказа

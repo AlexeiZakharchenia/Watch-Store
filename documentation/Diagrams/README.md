@@ -13,6 +13,11 @@
 2.3 [Создание заказа](#2.3)<br>
 2.4 [Просмотр последних трёх продуктов](#2.4)<br>
 3. [Диаграмма последовательности](#3)
+4. [Диаграммы cостояний](#4)<br>
+4.1 [Добавление в корзину](#4.1)<br>
+4.2 [Создание заказа](#4.2)<br>
+4.3 [Действия на панели инструментов](#4.3)<br>
+
 
 ### 1. Диаграмма прецедентов<a name="1"></a>
 Диаграмма прецедентов представляет собой следующую диаграмму:
@@ -101,3 +106,14 @@
 Диаграмма последовательности основных вариантов использования представлена ниже:
 
 ![Sequence Diagram](https://github.com/AlexeiZakharchenia/Watch-Store/blob/master/documentation/Diagrams/Sequence/Sequence.png)
+### 4. Диаграммы состояний<a name="4"></a>
+##### 4.1 Добавление в корзину<a name="4.1"></a> 
+
+![Add to Cart](https://github.com/AlexeiZakharchenia/Watch-Store/blob/master/documentation/Diagrams/State/AddToCart.png)
+##### 4.2 Создание заказа<a name="4.2"></a>
+
+![Create order](https://github.com/AlexeiZakharchenia/Watch-Store/blob/master/documentation/Diagrams/State/CreateOrder.png)
+##### 4.3 Действия на панели инструментов<a name="4.3"></a>
+
+![ToolbarActions](https://github.com/AlexeiZakharchenia/Watch-Store/blob/master/documentation/Diagrams/State/ToolbarActions.png)
+

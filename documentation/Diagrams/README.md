@@ -83,6 +83,15 @@
 3. Приложение переходит на страницу просмотра детальной информации о выбранном продукте.
 4. Конец.
 ### 2. Диаграммы активности<a name="2"></a>
+Данные диаграммы были созданы с использование mockups:
+- Окно просмотра всех продуктов
+  https://github.com/AlexeiZakharchenia/Watch-Store/blob/master/documentation/Mockups/productListPage.png
+- Окно просмотра детальной информации о продукте
+  https://github.com/AlexeiZakharchenia/Watch-Store/blob/master/documentation/Mockups/productDetailsPage.png
+- Окно просмотра корзины
+  https://github.com/AlexeiZakharchenia/Watch-Store/blob/master/documentation/Mockups/cartPage.png
+- Окно оформления заказа
+  https://github.com/AlexeiZakharchenia/Watch-Store/blob/master/documentation/Mockups/orderPage.png
 ##### 2.1 Просмотр всех продуктов<a name="2.1"></a> 
 Пользователь просматривает продукты. Пользователь имеет возможность воспользоваться поиском и применить сортировку при нажатии соответствующих клавиш и ввода данных для поиска. При нажатии на продукт происходит переход на страницу детальной информации о продукте.
 

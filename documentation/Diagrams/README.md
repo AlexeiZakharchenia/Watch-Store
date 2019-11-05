@@ -17,6 +17,7 @@
 4.1 [Добавление в корзину](#4.1)<br>
 4.2 [Создание заказа](#4.2)<br>
 4.3 [Действия на панели инструментов](#4.3)<br>
+5. [Диаграмма классов](#5)<br>
 
 
 ### 1. Диаграмма прецедентов<a name="1"></a>
@@ -116,4 +117,6 @@
 ##### 4.3 Действия на панели инструментов<a name="4.3"></a>
 
 ![ToolbarActions](https://github.com/AlexeiZakharchenia/Watch-Store/blob/master/documentation/Diagrams/State/ToolbarActions.png)
+### 5. Диаграмма классов<a name="5"></a>
 
+![Class](https://github.com/AlexeiZakharchenia/Watch-Store/blob/master/documentation/Diagrams/Class/Class.png)

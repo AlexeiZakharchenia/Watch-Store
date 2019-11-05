@@ -17,8 +17,8 @@
 4.1 [Добавление в корзину](#4.1)<br>
 4.2 [Создание заказа](#4.2)<br>
 4.3 [Действия на панели инструментов](#4.3)<br>
-5. [Диаграмма классов](#5)<br>
-
+5. [Диаграмма классов](#5)<br>d
+6. [Совмещенная диаграмма компонентов и развертывания](#6)<br>d
 
 ### 1. Диаграмма прецедентов<a name="1"></a>
 Диаграмма прецедентов представляет собой следующую диаграмму:
@@ -120,3 +120,6 @@
 ### 5. Диаграмма классов<a name="5"></a>
 
 ![Class](https://github.com/AlexeiZakharchenia/Watch-Store/blob/master/documentation/Diagrams/Class/Class.png)
+### 6. Совмещенная диаграмма компонентов и развертывания<a name="6"></a>
+
+![Component&Deployment](https://github.com/AlexeiZakharchenia/Watch-Store/blob/master/documentation/Diagrams/Component%20%26%20deployment/Component%26Deployment.png)

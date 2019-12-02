@@ -16,15 +16,15 @@ public class ProductDaoImpl implements ProductDao {
     private DBProcessor dbProcessor;
 
 
-    private ProductDaoImpl(){
+    private ProductDaoImpl() {
         try {
             dbProcessor = new DBProcessor();
-        }catch (SQLException ex){
+        } catch (SQLException ex) {
             ex.printStackTrace();
         }
     }
 
-    public static ProductDaoImpl getInstance(){
+    public static ProductDaoImpl getInstance() {
 
         ProductDaoImpl localInstance = instance;
 
@@ -48,20 +48,27 @@ public class ProductDaoImpl implements ProductDao {
         Statement statement = dbProcessor.getConnection().createStatement();
         ResultSet resultSet = statement.executeQuery(query);
         ArrayList<Product> actualProducts = new ArrayList<>();
-        while (resultSet.next()){
+        while (resultSet.next()) {
             int id = resultSet.getInt("id");
             String description = resultSet.getString("description");
             int price = resultSet.getInt("price");
             int stock = resultSet.getInt("stock");
             String imageUrl = resultSet.getString("image_url");
-            actualProducts.add(new Product( new Long(id),description, new BigDecimal(price), stock, imageUrl));
+            actualProducts.add(new Product(new Long(id), description, new BigDecimal(price), stock, imageUrl));
         }
         return actualProducts.stream();
     }
 
     @Override
     public Product getProduct(Long id) {
-        return null;
+        try {
+            return getActualProducts().filter(p -> p.getId().equals(id))
+                    .findFirst()
+                    .orElseThrow(() -> new ProductNotFoundException("Product with  id: " + id.toString() + " not exists"));
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+            return null;
+        }
     }
 
     @Override
@@ -69,7 +76,7 @@ public class ProductDaoImpl implements ProductDao {
         List<Product> foundProducts;
         try {
             foundProducts = getActualProducts().collect(Collectors.toList());
-        }catch (SQLException ex){
+        } catch (SQLException ex) {
             ex.printStackTrace();
             return new ArrayList<Product>();
         }
@@ -106,17 +113,6 @@ public class ProductDaoImpl implements ProductDao {
         }
 
         return productList.stream().sorted(comparator).collect(Collectors.toList());
-    }
-
-
-    @Override
-    public void save(Product product) {
-
-    }
-
-    @Override
-    public void delete(Long id) {
-
     }
 
 

@@ -3,6 +3,7 @@ package store.web;
 
 import store.model.product.ProductDao;
 import store.model.product.ProductDaoImpl;
+import store.recentlyViewed.RecentlyViewedService;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
@@ -14,13 +15,13 @@ import java.io.IOException;
 public class ProductListPageServlet extends HttpServlet {
 
     private ProductDao productDao;
-   // private RecentlyViewedService recentlyViewedService;
+    private RecentlyViewedService recentlyViewedService;
 
     @Override
     public void init(ServletConfig config) {
 
         productDao = ProductDaoImpl.getInstance();
-       // recentlyViewedService = RecentlyViewedService.getInstance();
+        recentlyViewedService = RecentlyViewedService.getInstance();
     }
 
     @Override
@@ -29,7 +30,7 @@ public class ProductListPageServlet extends HttpServlet {
         String sort = request.getParameter("sort");
         String order = request.getParameter("order");
         request.setAttribute("products", productDao.findProducts(query, order, sort));
-       // request.setAttribute("store.recentlyViewed", recentlyViewedService.getRecentlyViewedProductList(request));
+        request.setAttribute("store.recentlyViewed", recentlyViewedService.getRecentlyViewedProductList(request));
         request.getRequestDispatcher("/WEB-INF/pages/productList.jsp").forward(request, response);
     }
 }

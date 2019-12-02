@@ -1,9 +1,8 @@
 package store.web;
 
 
-import model.product.Product;
-import model.product.ProductDao;
-import model.product.ProductDaoImpl;
+import store.model.product.ProductDao;
+import store.model.product.ProductDaoImpl;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
@@ -11,7 +10,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.ArrayList;
 
 public class ProductListPageServlet extends HttpServlet {
 
@@ -31,7 +29,7 @@ public class ProductListPageServlet extends HttpServlet {
         String sort = request.getParameter("sort");
         String order = request.getParameter("order");
         request.setAttribute("products", productDao.findProducts(query, order, sort));
-       // request.setAttribute("recentlyViewed", recentlyViewedService.getRecentlyViewedProductList(request));
+       // request.setAttribute("store.recentlyViewed", recentlyViewedService.getRecentlyViewedProductList(request));
         request.getRequestDispatcher("/WEB-INF/pages/productList.jsp").forward(request, response);
     }
 }

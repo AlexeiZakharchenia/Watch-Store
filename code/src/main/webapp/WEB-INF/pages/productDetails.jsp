@@ -3,7 +3,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="tags" tagdir="/WEB-INF/tags" %>
 
-<jsp:useBean id="products" type="model.product.Product" scope="request"/>
+<jsp:useBean id="products" type="store.model.product.Product" scope="request"/>
 <tags:master pageTitle="Product Description">
     <p>
         Product Description.
@@ -37,7 +37,7 @@
     <form method="post" action="${pageContext.servletContext.contextPath}/products/${products.id}">
         <p>
             <input name="quantity" value="${not empty param.quantity? param.quantity : 1 }" style="text-align: right">
-            <button>Add to cart</button>
+            <button>Add to store.cart</button>
             <c:if test="${not empty error}">
                 <br><span style="color: red">${error}</span>
             </c:if>

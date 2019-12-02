@@ -1,6 +1,6 @@
-package utility;
+package store.utility;
 
-import model.product.ProductDaoImpl;
+import store.model.product.ProductDaoImpl;
 
 import javax.servlet.http.HttpServletRequest;
 

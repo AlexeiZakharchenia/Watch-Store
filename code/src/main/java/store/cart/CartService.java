@@ -1,4 +1,4 @@
-package cart;
+package store.cart;
 
 import javax.servlet.http.HttpServletRequest;
 

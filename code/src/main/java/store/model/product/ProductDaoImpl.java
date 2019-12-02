@@ -1,7 +1,6 @@
-package model.product;
+package store.model.product;
 
-import com.mysql.fabric.jdbc.FabricMySQLDriver;
-import sql.DBProcessor;
+import store.sql.DBProcessor;
 
 import java.math.BigDecimal;
 import java.sql.*;

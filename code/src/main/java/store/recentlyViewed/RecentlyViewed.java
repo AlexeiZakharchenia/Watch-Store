@@ -1,6 +1,6 @@
-package recentlyViewed;
+package store.recentlyViewed;
 
-import model.product.Product;
+import store.model.product.Product;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.LinkedList;

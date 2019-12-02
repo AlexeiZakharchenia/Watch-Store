@@ -1,4 +1,4 @@
-package model.product;
+package store.model.product;
 
 public class ProductNotFoundException extends RuntimeException {
     ProductNotFoundException(String message) {

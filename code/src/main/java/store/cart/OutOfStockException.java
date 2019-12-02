@@ -1,4 +1,4 @@
-package cart;
+package store.cart;
 
 
 public class OutOfStockException extends Exception {

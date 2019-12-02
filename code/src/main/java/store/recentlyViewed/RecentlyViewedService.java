@@ -1,8 +1,8 @@
-package recentlyViewed;
+package store.recentlyViewed;
 
-import model.product.Product;
-import model.product.ProductDao;
-import model.product.ProductDaoImpl;
+import store.model.product.Product;
+import store.model.product.ProductDao;
+import store.model.product.ProductDaoImpl;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;

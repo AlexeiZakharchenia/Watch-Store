@@ -1,6 +1,6 @@
-package cart;
+package store.cart;
 
-import model.product.Product;
+import store.model.product.Product;
 
 import java.io.Serializable;
 import java.util.Objects;

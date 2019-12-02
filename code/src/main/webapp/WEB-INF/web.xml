@@ -37,15 +37,15 @@
     </servlet-mapping>
 
 
-    <!--<servlet>-->
-        <!--<servlet-name>cartItemDelete</servlet-name>-->
-        <!--<servlet-class>store.web.CartItemDeleteServlet</servlet-class>-->
-    <!--</servlet>-->
+    <servlet>
+        <servlet-name>cartItemDelete</servlet-name>
+        <servlet-class>store.web.CartItemDeleteServlet</servlet-class>
+    </servlet>
 
-    <!--<servlet-mapping>-->
-        <!--<servlet-name>cartItemDelete</servlet-name>-->
-        <!--<url-pattern>/cart/deleteItem/*</url-pattern>-->
-    <!--</servlet-mapping>-->
+    <servlet-mapping>
+        <servlet-name>cartItemDelete</servlet-name>
+        <url-pattern>/cart/deleteItem/*</url-pattern>
+    </servlet-mapping>
 
     <!--<servlet>-->
         <!--<servlet-name>checkoutPage</servlet-name>-->
@@ -66,7 +66,6 @@
         <!--<servlet-name>orderOverviewPage</servlet-name>-->
         <!--<url-pattern>/checkout/orderOverview/*</url-pattern>-->
     <!--</servlet-mapping>-->
-
 
 
 </web-app>

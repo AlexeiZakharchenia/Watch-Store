@@ -41,6 +41,10 @@ public class CartPageServlet extends HttpServlet {
         String[] productIds = request.getParameterValues("productId");
         String[] quantities = request.getParameterValues("quantity");
 
+        if(productIds == null){
+            response.sendRedirect(request.getRequestURI() + "?message=Update successfully");
+            return;
+        }
         String[] errors = new String[productIds.length + 1];
         Cart cart = cartService.getCart(request);
         for (int i = 0; i < productIds.length; ++i) {

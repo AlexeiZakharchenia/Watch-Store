@@ -47,19 +47,19 @@
         <url-pattern>/cart/deleteItem/*</url-pattern>
     </servlet-mapping>
 
-    <!--<servlet>-->
-        <!--<servlet-name>checkoutPage</servlet-name>-->
-        <!--<servlet-class>store.web.CheckoutPageServlet</servlet-class>-->
-    <!--</servlet>-->
+    <servlet>
+        <servlet-name>checkoutPage</servlet-name>
+        <servlet-class>store.web.CheckoutPageServlet</servlet-class>
+    </servlet>
 
-    <!--<servlet-mapping>-->
-        <!--<servlet-name>checkoutPage</servlet-name>-->
-        <!--<url-pattern>/checkout</url-pattern>-->
-    <!--</servlet-mapping>-->
+    <servlet-mapping>
+        <servlet-name>checkoutPage</servlet-name>
+        <url-pattern>/checkout</url-pattern>
+    </servlet-mapping>
 
     <!--<servlet>-->
         <!--<servlet-name>orderOverviewPage</servlet-name>-->
-        <!--<servlet-class>store.web.OrderOverviewPageServlet</servlet-class>-->
+        <!--<servlet-class>com.es.phoneshop.web.OrderOverviewPageServlet</servlet-class>-->
     <!--</servlet>-->
 
     <!--<servlet-mapping>-->

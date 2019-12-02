@@ -37,7 +37,7 @@
     <form method="post" action="${pageContext.servletContext.contextPath}/products/${products.id}">
         <p>
             <input name="quantity" value="${not empty param.quantity? param.quantity : 1 }" style="text-align: right">
-            <button>Add to store.cart</button>
+            <button>Add to cart</button>
             <c:if test="${not empty error}">
                 <br><span style="color: red">${error}</span>
             </c:if>

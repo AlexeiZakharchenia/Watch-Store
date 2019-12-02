@@ -36,7 +36,7 @@
                 </td>
                 <td><a href="products/${product.id}"> ${product.description} </a></td>
                 <td class="price">
-                    <fmt:formatNumber value="${product.price}" /> $
+                    <fmt:formatNumber value="${product.price}" />$
                 </td>
             </tr>
 
@@ -53,7 +53,7 @@
                 <br>
                 <a href="${pageContext.servletContext.contextPath}/products/${product.id}"> ${product.description} </a>
                 <br>
-                <fmt:formatNumber value="${product.price}" /> $
+                <fmt:formatNumber value="${product.price}" />$
                 <br>
             </td>
             </th>

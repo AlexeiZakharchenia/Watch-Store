@@ -15,6 +15,16 @@
         <url-pattern>/products</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>productDetails</servlet-name>
+        <servlet-class>store.web.ProductDetailsPageServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>productDetails</servlet-name>
+        <url-pattern>/products/*</url-pattern>
+    </servlet-mapping>
+
 
 
 </web-app>

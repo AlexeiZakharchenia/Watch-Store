@@ -112,7 +112,7 @@
 
 ## Представление результатов
 
-Результаты представлены  в документе ["Результаты тестирования"](https://github.com/AlexeiZakharchenia/Watch-Store/blob/master/Testing/TestResults.md).
+Результаты представлены  в документе ["Результаты тестирования"](https://github.com/AlexeiZakharchenia/Watch-Store/blob/master/Testing/TestResult.md).
 
 <a name="conclusion"/>
 

@@ -11,7 +11,7 @@
   <header>
     <a href="${pageContext.servletContext.contextPath}">
       <img src="${pageContext.servletContext.contextPath}/images/logo.svg"/>
-      PhoneShop
+      Watch Store
     </a>
     <jsp:include page="/WEB-INF/fragments/minicart.jsp"/>
   </header>

@@ -5,5 +5,16 @@
          version="3.1">
     <display-name>Watch-Store</display-name>
 
+    <servlet>
+        <servlet-name>productList</servlet-name>
+        <servlet-class>store.web.ProductListPageServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>productList</servlet-name>
+        <url-pattern>/products</url-pattern>
+    </servlet-mapping>
+
+
 
 </web-app>

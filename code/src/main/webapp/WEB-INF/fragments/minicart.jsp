@@ -1,16 +1,6 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: lesha
-  Date: 02.12.2019
-  Time: 12:04
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
+<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="tags" tagdir="/WEB-INF/tags" %>
 
-</body>
-</html>
+<a href="${pageContext.servletContext.contextPath}/cart">Cart $${sessionScope.get("sessionCart").totalPrice}</a>

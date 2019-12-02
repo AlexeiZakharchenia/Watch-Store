@@ -13,31 +13,11 @@ public class DBProcessor {
     public static final String USERNAME = "lesha";
     public static final String PASSWORD = "1111";
 
-    private static volatile DBProcessor instance = null;
 
     public DBProcessor() throws SQLException {
         DriverManager.registerDriver(new FabricMySQLDriver());
         connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
     }
-
-    public static DBProcessor getInstance() throws SQLException {
-
-        DBProcessor localInstance = instance;
-
-        if (instance == null) {
-            synchronized (DBProcessor.class) {
-                localInstance = instance;
-                if (localInstance == null) {
-                    instance = localInstance = new DBProcessor();
-                }
-
-            }
-
-        }
-        return instance;
-
-    }
-
 
 
     public Connection getConnection() {

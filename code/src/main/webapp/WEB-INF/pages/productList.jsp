@@ -32,7 +32,7 @@
             <tr>
                 <td>
                     <img class="product-tile"
-                         src="https://raw.githubusercontent.com/AlexeiZakharchenia/Watch-Store/master${product.imageUrl}">
+                         src="https://raw.githubusercontent.com/AlexeiZakharchenia/Watch-Store/master/images/${product.imageUrl}">
                 </td>
                 <td><a href="products/${product.id}"> ${product.description} </a></td>
                 <td class="price">
@@ -49,7 +49,7 @@
             <th>
             <td align="center">
                 <img class="product-tile"
-                     src="https://raw.githubusercontent.com/AlexeiZakharchenia/Watch-Store/master/${product.imageUrl}">
+                     src="https://raw.githubusercontent.com/AlexeiZakharchenia/Watch-Store/master/images/${product.imageUrl}">
                 <br>
                 <a href="${pageContext.servletContext.contextPath}/products/${product.id}"> ${product.description} </a>
                 <br>

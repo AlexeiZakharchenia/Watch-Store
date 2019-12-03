@@ -3,11 +3,11 @@ package store.web;
 import store.cart.Cart;
 import store.cart.CartService;
 import store.cart.HttpSessionCartService;
-import store.cart.OutOfStockException;
+import store.exceptions.OutOfStockException;
 import store.model.product.Product;
 import store.model.product.ProductDao;
 import store.model.product.ProductDaoImpl;
-import store.model.product.ProductNotFoundException;
+import store.exceptions.ProductNotFoundException;
 import store.recentlyViewed.RecentlyViewedService;
 import store.utility.RequestUtility;
 
@@ -36,12 +36,9 @@ public class ProductDetailsPageServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
-
-
             long productId = requestUtility.getProductId(request);
 
             LinkedList<Product> recentlyViewedList = recentlyViewedService.getRecentlyViewedProductList(request);
-
 
             request.setAttribute("recentlyViewed", recentlyViewedList);
             request.setAttribute("products", productDao.getProduct(productId));

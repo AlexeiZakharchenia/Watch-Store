@@ -85,7 +85,7 @@
                 </c:forEach>
             </select>
         </p>
-            <button>Place Order</button>
+        <button>Place Order</button>
         </p>
 
     </form>

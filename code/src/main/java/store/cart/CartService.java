@@ -1,5 +1,7 @@
 package store.cart;
 
+import store.exceptions.OutOfStockException;
+
 import javax.servlet.http.HttpServletRequest;
 
 public interface CartService {

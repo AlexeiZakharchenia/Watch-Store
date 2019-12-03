@@ -1,5 +1,7 @@
 package store.order;
 
+import store.exceptions.OrderNotFoundException;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -31,9 +33,7 @@ public class OrderDaoImpl implements OrderDao {
                 if (localInstance == null) {
                     instance = localInstance = new OrderDaoImpl();
                 }
-
             }
-
         }
         return instance;
     }

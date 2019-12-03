@@ -25,9 +25,7 @@ public class RecentlyViewedService implements RecentlyViewed {
                 if (localInstance == null) {
                     instance = localInstance = new RecentlyViewedService();
                 }
-
             }
-
         }
         return instance;
     }

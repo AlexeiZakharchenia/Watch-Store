@@ -1,5 +1,6 @@
 package store.model.product;
 
+import store.exceptions.ProductNotFoundException;
 import store.sql.DBProcessor;
 
 import java.math.BigDecimal;

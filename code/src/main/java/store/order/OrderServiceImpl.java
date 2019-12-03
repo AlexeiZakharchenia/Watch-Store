@@ -26,9 +26,7 @@ public class OrderServiceImpl implements OrderService {
                 if (localInstance == null) {
                     instance = localInstance = new OrderServiceImpl();
                 }
-
             }
-
         }
         return instance;
     }

@@ -1,5 +1,6 @@
 package store.cart;
 
+import store.exceptions.OutOfStockException;
 import store.model.product.Product;
 import store.model.product.ProductDao;
 import store.model.product.ProductDaoImpl;

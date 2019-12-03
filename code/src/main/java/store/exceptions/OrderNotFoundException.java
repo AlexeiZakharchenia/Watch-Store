@@ -1,7 +1,7 @@
-package store.order;
+package store.exceptions;
 
 public class OrderNotFoundException extends Exception {
-    OrderNotFoundException(String message) {
+    public OrderNotFoundException(String message) {
         super(message);
     }
 }

@@ -3,7 +3,7 @@ package store.web;
 import store.cart.Cart;
 import store.cart.CartService;
 import store.cart.HttpSessionCartService;
-import store.cart.OutOfStockException;
+import store.exceptions.OutOfStockException;
 import store.model.product.Product;
 import store.recentlyViewed.RecentlyViewedService;
 
@@ -41,7 +41,7 @@ public class CartPageServlet extends HttpServlet {
         String[] productIds = request.getParameterValues("productId");
         String[] quantities = request.getParameterValues("quantity");
 
-        if(productIds == null){
+        if (productIds == null) {
             response.sendRedirect(request.getRequestURI() + "?message=Update successfully");
             return;
         }

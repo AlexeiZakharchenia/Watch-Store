@@ -1,8 +1,8 @@
-package store.cart;
+package store.exceptions;
 
 
 public class OutOfStockException extends Exception {
-    OutOfStockException(String message) {
+    public OutOfStockException(String message) {
         super(message);
     }
 }

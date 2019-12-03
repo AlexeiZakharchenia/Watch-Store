@@ -36,7 +36,7 @@
                 </td>
                 <td><a href="products/${product.id}"> ${product.description} </a></td>
                 <td class="price">
-                    <fmt:formatNumber value="${product.price}" />$
+                    <fmt:formatNumber value="${product.price}"/>$
                 </td>
             </tr>
 
@@ -45,15 +45,15 @@
     <h4>Recently Viewed:</h4>
     <table>
         <thead>
-        <c:forEach var="product" items="${recentlyViewed}">
+        <c:forEach var="productsViewed" items="${recentlyViewed}">
             <th>
             <td align="center">
                 <img class="product-tile"
-                     src="https://raw.githubusercontent.com/AlexeiZakharchenia/Watch-Store/master/images/${product.imageUrl}">
+                     src="https://raw.githubusercontent.com/AlexeiZakharchenia/Watch-Store/master/images/${productsViewed.imageUrl}">
                 <br>
-                <a href="${pageContext.servletContext.contextPath}/products/${product.id}"> ${product.description} </a>
+                <a href="${pageContext.servletContext.contextPath}/products/${productsViewed.id}"> ${productsViewed.description} </a>
                 <br>
-                <fmt:formatNumber value="${product.price}" />$
+                <fmt:formatNumber value="${productsViewed.price}"/>$
                 <br>
             </td>
             </th>

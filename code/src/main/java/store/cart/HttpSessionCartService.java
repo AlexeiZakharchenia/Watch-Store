@@ -97,9 +97,8 @@ public class HttpSessionCartService implements CartService {
 
     @Override
     public void clearCart(Cart cart, HttpServletRequest request) {
-        cart.getCartItems().forEach(cartItem ->
-                productDao.getProduct(cartItem.getProduct().getId())
-                        .setStock(cartItem.getProduct().getStock() - cartItem.getQuantity()));
+        cart.getCartItems().forEach(cartItem -> productDao.setNewStock(cartItem.getProduct().getId(),
+                cartItem.getProduct().getStock() - cartItem.getQuantity()));
         request.getSession().setAttribute(SESSION_CART_KEY, new Cart());
     }
 

@@ -116,4 +116,16 @@ public class ProductDaoImpl implements ProductDao {
     }
 
 
+    @Override
+    public void setNewStock(long productId, int newStock) {
+        String query = "update business.products " +
+                "set stock=" + newStock + " where id=" + productId;
+        try {
+            Statement statement = dbProcessor.getConnection().createStatement();
+            statement.execute(query);
+        }catch (SQLException ex){
+            ex.printStackTrace();
+            return;
+        }
+    }
 }

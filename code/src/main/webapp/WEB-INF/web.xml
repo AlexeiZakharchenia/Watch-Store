@@ -57,15 +57,15 @@
         <url-pattern>/checkout</url-pattern>
     </servlet-mapping>
 
-    <!--<servlet>-->
-        <!--<servlet-name>orderOverviewPage</servlet-name>-->
-        <!--<servlet-class>com.es.phoneshop.web.OrderOverviewPageServlet</servlet-class>-->
-    <!--</servlet>-->
+    <servlet>
+        <servlet-name>orderOverviewPage</servlet-name>
+        <servlet-class>store.web.OrderOverviewPageServlet</servlet-class>
+    </servlet>
 
-    <!--<servlet-mapping>-->
-        <!--<servlet-name>orderOverviewPage</servlet-name>-->
-        <!--<url-pattern>/checkout/orderOverview/*</url-pattern>-->
-    <!--</servlet-mapping>-->
+    <servlet-mapping>
+        <servlet-name>orderOverviewPage</servlet-name>
+        <url-pattern>/checkout/orderOverview/*</url-pattern>
+    </servlet-mapping>
 
 
 </web-app>

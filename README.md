@@ -7,4 +7,5 @@ Application uses Java 8, Servlet API, JSP API.
 ## Contents
 1. [Documentation](https://github.com/AlexeiZakharchenia/Watch-Store/tree/master/documentation) <br>
   1.1 [Reqirements](https://github.com/AlexeiZakharchenia/Watch-Store/blob/master/documentation/Requirements/Requirements.md) <br>
-3. [UML Diagrams](https://github.com/AlexeiZakharchenia/Watch-Store/tree/master/documentation/Diagrams)<br>
+2. [UML Diagrams](https://github.com/AlexeiZakharchenia/Watch-Store/tree/master/documentation/Diagrams)<br>
+3. [Testing](https://github.com/AlexeiZakharchenia/Watch-Store/tree/master/Testing)<br>
